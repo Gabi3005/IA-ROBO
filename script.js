@@ -19,8 +19,8 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Você acredita que a inteligência artificial terá um impacto positivo no mercado de trabalho, criando mais empregos do que eliminando?"*
-",
+        enunciado: "Você acredita que a inteligência artificial terá um impacto positivo no mercado de trabalho, criando mais empregos do que eliminando?" *
+            ",
         alternativas: [
             {
                 texto: "Sim, a IA trará mais oportunidades e impulsionará novas indústrias..",
@@ -33,35 +33,30 @@ const perguntas = [
         ]
     },
     {
-        enunciado: É seguro que a IA tome decisões importantes, como diagnósticos médicos?  
-",
+        enunciado:"  É seguro que a IA tome decisões importantes, como diagnósticos médicos?  " ,
         alternativas: [
             {
                 texto: "Sim, ela pode ser mais precisa do que humanos.",
                 afirmacao: "A IA pode analisar grandes volumes de dados e apresentar diagnósticos rápidos."
             },
             {
-                texto: "Não, há riscos de erros e falta de empatia." ,
+                texto: "Não, há riscos de erros e falta de empatia.",
 
-                afirmacao: "Não: Erros em sistemas de IA podem ter consequências graves e não substituem a experiência humana."
+                afirmacao: "Não, Erros em sistemas de IA podem ter consequências graves e não substituem a experiência humana."
 
             }
         ]
     },
     {
-        enunciado: "Na sua opinião os governos devem regular o desenvolvimento de IA?  
-",
+        enunciado: "Na sua opinião os governos devem regular o desenvolvimento de IA?  ",
         alternativas: [
             {
                 texto: "Sim, para evitar abusos e desigualdades.",
                 afirmacao: "Regulamentar a IA pode garantir segurança, ética e justiça"
             },
             {
-                texto: " Não, a inovação pode ser prejudicada por regulações." ,  
-.
-",
-                afirmacao: " Regras rígidas podem limitar a criatividade e os avanços tecnológicos.
-"
+                texto: " Não, a inovação pode ser prejudicada por regulações.", 
+                afirmacao: " Regras rígidas podem limitar a criatividade e os avanços tecnológicos."
             }
         ]
     },
@@ -75,7 +70,7 @@ const perguntas = [
             },
             {
                 texto: "2. Beneficiará as empresas.  
-.",
+                    .",
                 afirmacao: "- *Empresas:* A IA pode aumentar lucros e eficiência, mas pode priorizar automação sobre empregos humanos.
 . "
             }
@@ -99,8 +94,8 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
