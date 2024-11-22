@@ -61,25 +61,24 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Você acha que a IA será mais benéfica para trabalhadores ou empresas?  
-",
+        enunciado: "Você acha que a IA será mais benéfica para trabalhadores ou empresas?  ",
         alternativas: [
             {
                 texto: "Beneficiará os trabalhadores.",
-                afirmacao: "Trabalhadores:* A IA pode facilitar tarefas repetitivas e criar novas oportunidades de aprendizado e crescimento."
-            },
+                afirmacao: "Trabalhadores: A IA pode facilitar tarefas repetitivas e criar novas oportunidades de aprendizado e crescimento."
+            }
+
             {
-                texto: "2. Beneficiará as empresas.  
-                    .",
-                afirmacao: "- *Empresas:* A IA pode aumentar lucros e eficiência, mas pode priorizar automação sobre empregos humanos.
-. "
+                texto: " Beneficiará as empresas.",
+                afirmacao: "Empresas: A IA pode aumentar lucros e eficiência, mas pode priorizar automação sobre empregos humanos."
+ 
             }
         ]
-    },
+    }
 ];
 
 
-let atual = 0;
+let atual = 2;
 let perguntaAtual;
 let historiaFinal = "";
 
